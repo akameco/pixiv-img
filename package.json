@@ -10,7 +10,7 @@
     "url": "akameco.github.io"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -20,7 +20,7 @@
   ],
   "keywords": [
     "pixiv",
-    "iamge",
+    "image",
     "save",
     "download",
     "illust"

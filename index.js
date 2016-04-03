@@ -1,7 +1,7 @@
 'use strict';
-var got = require('got');
-var path = require('path');
-var fs = require('fs');
+const got = require('got');
+const path = require('path');
+const fs = require('fs');
 
 module.exports = function (imgUrl, output) {
 	return new Promise((resolve, reject) => {
@@ -11,7 +11,7 @@ module.exports = function (imgUrl, output) {
 
 		output = output || path.basename(imgUrl);
 
-		var options = {
+		const options = {
 			encoding: null,
 			headers: {
 				Referer: 'http://www.pixiv.net/'
