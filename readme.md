@@ -24,6 +24,8 @@ pixivImg(imgUrl).then(output => {
 //=> '56100246_p0.jpg'
 ```
 
+Use with [pixiv.js](https://github.com/akameco/pixiv.js)
+
 ## API
 
 ### pixivImg(imgUrl, output)
@@ -42,6 +44,10 @@ Type: `String`<br>
 Default: path.basename(imgUrl)
 
 output path.
+
+## Related
+
+- [pixiv.js](https://github.com/akameco/pixiv.js) - pixiv api client
 
 ## License
 
