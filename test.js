@@ -22,7 +22,7 @@ test('output path', async t => {
 
 test('throw type error', async t => {
 	try {
-		await fn(null);
+		await fn();
 		t.fail('Exception was not thrown');
 	} catch (e) {
 		t.regex(e.message, /string/);
