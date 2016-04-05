@@ -18,7 +18,12 @@ module.exports = function (imgUrl, output) {
 			}
 		};
 
-		got.stream(imgUrl, options).pipe(fs.createWriteStream(output)).on('close', () => {
+		const gotStream = got.stream(imgUrl, options);
+		gotStream.on('error', err => {
+			reject(err);
+		});
+
+		gotStream.pipe(fs.createWriteStream(output)).on('close', () => {
 			resolve(output);
 		});
 	});
