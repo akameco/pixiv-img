@@ -28,7 +28,7 @@ Use with [pixiv.js](https://github.com/akameco/pixiv.js)
 
 ## API
 
-### pixivImg(imgUrl, output)
+### pixivImg(imgUrl, [output])
 
 #### imgUrl
 
