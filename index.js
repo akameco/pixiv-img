@@ -1,7 +1,7 @@
 'use strict';
-const got = require('got');
 const path = require('path');
 const fs = require('fs');
+const got = require('got');
 
 module.exports = function (imgUrl, output) {
 	return new Promise((resolve, reject) => {

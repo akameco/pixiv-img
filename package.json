@@ -26,12 +26,12 @@
     "illust"
   ],
   "dependencies": {
-    "got": "^6.2.0"
+    "got": "^6.3.0"
   },
   "devDependencies": {
     "ava": "^0.14.0",
     "del": "^2.2.0",
     "path-exists": "^2.1.0",
-    "xo": "^0.12.1"
+    "xo": "^0.15.0"
   }
 }

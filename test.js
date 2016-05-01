@@ -1,8 +1,9 @@
-import test from 'ava';
 import path from 'path';
+import test from 'ava';
 import del from 'del';
 import pathExists from 'path-exists';
 import fn from './';
+
 const imgUrl = 'http://i3.pixiv.net/img-original/img/2016/03/31/00/31/46/56100246_p0.jpg';
 const fakeUrl = 'http://i3.pixiv.net/img-original/img/2016/03/31/00/31/46/fake.jpg';
 
@@ -34,7 +35,7 @@ test('throw http error', async t => {
 		await fn(fakeUrl);
 		t.fail('Exception was not thrown');
 	} catch (err) {
-		t.ok(err);
+		t.truthy(err);
 		t.is(err.message, 'Response code 404 (Not Found)');
 	}
 });
