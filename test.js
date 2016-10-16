@@ -25,8 +25,8 @@ test('throw type error', async t => {
 	try {
 		await fn();
 		t.fail('Exception was not thrown');
-	} catch (e) {
-		t.regex(e.message, /string/);
+	} catch (err) {
+		t.regex(err.message, /string/);
 	}
 });
 
