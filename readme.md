@@ -1,5 +1,7 @@
 # pixiv-img [![Build Status](https://travis-ci.org/akameco/pixiv-img.svg?branch=master)](https://travis-ci.org/akameco/pixiv-img)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/akameco/pixiv-img.svg)](https://greenkeeper.io/)
+
 > Save the image of pixiv.
 
 
