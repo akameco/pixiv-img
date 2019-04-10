@@ -2,7 +2,7 @@ import path from 'path';
 import test from 'ava';
 import del from 'del';
 import pathExists from 'path-exists';
-import fn from './';
+import fn from '.';
 
 const imgUrl = 'http://i3.pixiv.net/img-original/img/2016/03/31/00/31/46/56100246_p0.jpg';
 const fakeUrl = 'http://i3.pixiv.net/img-original/img/2016/03/31/00/31/46/fake.jpg';
@@ -25,8 +25,8 @@ test('throw type error', async t => {
 	try {
 		await fn();
 		t.fail('Exception was not thrown');
-	} catch (err) {
-		t.regex(err.message, /string/);
+	} catch (error) {
+		t.regex(error.message, /string/);
 	}
 });
 
@@ -34,8 +34,8 @@ test('throw http error', async t => {
 	try {
 		await fn(fakeUrl);
 		t.fail('Exception was not thrown');
-	} catch (err) {
-		t.truthy(err);
-		t.is(err.message, 'Response code 404 (Not Found)');
+	} catch (error) {
+		t.truthy(error);
+		t.is(error.message, 'Response code 404 (Not Found)');
 	}
 });
